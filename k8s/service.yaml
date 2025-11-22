@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: algotradeapp-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: algotradeapp
   ports:
