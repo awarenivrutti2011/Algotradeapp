@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: algotradeapp
+  labels:
+    app: algotradeapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: algotradeapp
+  template:
+    metadata:
+      labels:
+        app: algotradeapp
+    spec:
+      containers:
+      - name: algotradeapp
+        image: awarenivrutti2011/algotradeapp:v1   # update tag when new version
+        ports:
+        - containerPort: 80
+
