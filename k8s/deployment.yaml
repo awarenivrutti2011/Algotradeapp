@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: algotradeapp
   labels:
-    app: algotradeapp
+    app: algotradeap
 spec:
   replicas: 7
   selector:
