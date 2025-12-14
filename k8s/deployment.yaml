@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: algotradeapp
   labels:
-    app: algotradeapp
+    app: algotradea
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: algotradeap
+      app: algotradeapp
   template:
     metadata:
       labels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: algotradeapp
-        image: awarenivrutti11/algotradeapp:v   # update tag when new version
+        image: awarenivrutti11/algotradeapp:v1   # update tag when new version
         ports:
         - containerPort: 80
 
